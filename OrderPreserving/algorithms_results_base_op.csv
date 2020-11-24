@@ -1,0 +1,4 @@
+Algorithm,Parameters,Execution_Time,#Triclusters,Clustering_Error_3D,Coverage_Mean,Coverage_Std,MSR_Mean,MSR_Std,Recoverability_Total,Recoverability_Mean,Recoverability_Std,R_OP_C_C_Mean,R_OP_C_C_Std,R_C_OP_C_Mean,R_C_OP_C_Std,R_C_C_OP_Mean,R_C_C_OP_Std,IntraTemporal_Homogeneity_Mean,IntraTemporal_Homogeneity_Std,InterTemporal_Homogeneity_Mean,InterTemporal_Homogeneity_Std
+Tricluster,"{'w': 0.07, 'd': 1, 'm': 1}",20.455,2,0.979,0.300,0.000,26223336.299,12781659.940,0.000,0.030,0.099,0.084,0.157,0.000,0.000,0.006,0.012,0.660,0.030,0.805,0.135
+TWIGS,"{'min_rows': 8, 'min_cols': 4, 'max_num_bics': 33, 'gibbs_reps': 100, 'method': 'isa'}",582.323,10,0.977,4.000,1.500,182858270.860,8816945.826,0.000,0.164,0.074,0.140,0.061,0.205,0.089,0.146,0.048,0.364,0.062,0.379,0.143
+TriWclustering,"{'alpha': 1, 'delta': 1, 'ite': 33}",2.285,3,0.989,11.400,11.500,177445579.360,24219772.072,0.000,0.332,0.178,0.332,0.211,0.378,0.177,0.285,0.123,0.230,0.207,0.597,0.133

@@ -1,0 +1,5 @@
+Run,Parameters,Execution_Time,#Triclusters,Coverage_Mean,Coverage_Std,Coverage,#Rows_Mean,#Rows_Std,#Cols_Mean,#COls_Std,#Ctxs_Mean,#Ctxs_Std,MSR_Mean,MSR_Std,MSR,Recoverability_Mean,Recoverability_Std,Recoverability,IntraTemporal_Homogeneity,InterTemporal_Homogeneity
+1,"{'w': 0.001, 'd': 1, 'm': 1}",0.023,0,nan,nan,{},nan,nan,nan,nan,nan,nan,nan,nan,{},nan,nan,{},{},{}
+2,"{'w': 0.005, 'd': 1, 'm': 1}",0.023,0,nan,nan,{},nan,nan,nan,nan,nan,nan,nan,nan,{},nan,nan,{},{},{}
+3,"{'w': 0.01, 'd': 1, 'm': 1}",0.026,0,nan,nan,{},nan,nan,nan,nan,nan,nan,nan,nan,{},nan,nan,{},{},{}
+4,"{'w': 0.05, 'd': 1, 'm': 1}",0.181,0,nan,nan,{},nan,nan,nan,nan,nan,nan,nan,nan,{},nan,nan,{},{},{}
