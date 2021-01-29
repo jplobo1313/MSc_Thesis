@@ -8,6 +8,7 @@ Created on Mon Nov  2 11:27:12 2020
 
 import numpy as np
 from scipy.optimize import linear_sum_assignment
+import argparse
 
 # =================== CE Auxiliary Functions =================================
 
@@ -198,3 +199,21 @@ def Recoverability(ground_truth, solution):
 
 #print('Intra-Temporal Homogeneity: ', IntraTemporalHomogeneity(data))
 #print('Inter-Temporal Homogeneity: ', InterTemporalHomogeneity(data))
+
+if __name__ == '__main__':
+    
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--metric', metavar='metric', help='CE: Clustering Error\n R: Recoverability')
+    parser.add_argument('--gt', help='Ground Truth using a dict in the form {<tric_id>:[[rows],[cols],[ctxs]]}')
+    parser.add_argument('--sol', help='Solution using a dict in the form {<tric_id>:[[rows],[cols],[ctxs]]}')
+    parser.add_argument('--nrows', nargs='?', type=int, help='N. of rows in the dataset')
+    parser.add_argument('--ncols', nargs='?', type=int, help='N. of cols in the dataset')
+    parser.add_argument('--nctxs', nargs='?', type=int, help='N. of ctxs in the dataset')
+    args = parser.parse_args()
+    
+    if args.metric == 'CE':
+        print(ClusteringError3D(eval(args.gt), eval(args.sol), args.nrows, args.ncols, args.nctxs))
+    elif args.metric == 'R':
+        print(Recoverability(eval(args.gt), eval(args.sol)))
+    else:
+        print('Function not supported')
